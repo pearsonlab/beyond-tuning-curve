@@ -31,23 +31,54 @@
 
 					[pearsonlab.github.io/mt-sinai-2017](https://pearsonlab.github.io/mt-sinai-2017)
 				</section>
-				<section data-background-image="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/ccn2017/macaques_group.jpg">
-					<aside class="notes" data-markdown>
-						photo credit: Buddhika Weerasinghe/Getty Images
-					</aside>
-				</section>
 				<section data-background-image="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/ccn2017/4f.png">
+					<div style="background-color: rgba(0, 0, 0, 0.75); padding: 10px" class="fragment fade-left">
+						<h3>How we decide</h3>
+						<ul>
+							<li>
+								Explore/exploit
+								<ul>
+									<li style="font-size: 0.5em">Pearson, Hayden, Raghavachari, Platt (2009)</li>
+									<li style="font-size: 0.5em">Addicott, Pearson, Froeliger, Platt, McClernon (2014)</li>
+								</ul>
+							</li>
+							<li>
+								Temporal discounting
+								<ul>
+									<li style="font-size: 0.5em">Pearson, Hayden, Platt (2010)</li>
+									<li style="font-size: 0.5em">Blanchard, Pearson, Hayden (2013)</li>
+								</ul>
+							</li>
+							<li>
+								Learning under uncertainty
+								<ul>
+									<li style="font-size: 0.5em">Hayden, Heilbronner, Pearson, Platt (2011)</li>
+									<li style="font-size: 0.5em">Pearson, Heilbronner, Barack, Hayden, Platt (2011)</li>
+								</ul>
+							</li>
+							<li>
+								Foraging
+								<ul>
+									<li style="font-size: 0.5em">Hayden, Pearson, Platt (2011)</li>
+									<li style="font-size: 0.5em">Pearson, Watson, Platt (2014)</li>
+								</ul>
+							</li>
+							<li>
+								Social Reward
+								<ul>
+									<li style="font-size: 0.5em">Pearson, Watson, Klein, Ebitz, Platt (2013)</li>
+									<li style="font-size: 0.5em">Chang, Fagan, Toda, Utevsky, Pearson, Platt (2015)</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
 					<aside class="notes" data-markdown>
 						- [upper left](https://thedrinkingbird.files.wordpress.com/2013/05/img_2476.jpg)
 						- [upper right](http://seancrane.com/galleries/japan/) Sean Crane
 						- [lower right](http://www.gettyimages.com/license/153234629): MOHD RASFAN/AFP/GettyImages
 						- [lower right](https://commons.wikimedia.org/wiki/File:Baviaan2.JPG) Dick Mudde
 					</aside>
-				</section>
-				<section>
-					<h3>A social brain?</h3>
-					<img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/ccn2017/mars_tpj.png" style="width: 75%">
-					<p class="ref">Mars et al. (PNAS 2014)</p>
 				</section>
 				<section data-background-image="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/ccn2017/macaque_grooming.jpg">
 					<h2>But how do you turn this...</h2>
@@ -65,41 +96,25 @@
 					</div>
 				</section>
 				<section data-markdown>
-					##You knew there was a catch
-					- How far can we distill social interaction?
-					- Trial averaging is out.
-					- Our (statistical) models are limiting our thinking.
+					##The tuning curve paradigm
+					- Subject repeats same behavior many times
+					- Average neural firing across repeats
+					- Neuronal populations are characterized by tuning
+				</section>
+				<section data-markdown>
+					##The prefrontal reality
+					- Complex behaviors never quite repeated
+					- Dynamics not quite regular enough to average
+					- Where are the tuning curves?
 				</section>
 				<section data-background-image="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/ccn2017/deep_learning_cover.jpg" data-background-size="contain">
 				</section>
 				<section data-markdown>
 					### Today's plan:
-					Social neuroscience from the outside in:
-					- Learning "social space" from spiking ([arXiv](https://arxiv.org/abs/1512.01408))
-					- Inferring goals from complex motions ([arXiv](https://arxiv.org/abs/1702.07319))
+					Three exercises in removing constraints:
+					- Learning stimulus space without labels ([arXiv](https://arxiv.org/abs/1512.01408))
+					- Complex behavior without trial averaging ([arXiv](https://arxiv.org/abs/1702.07319))
 					- Single-trial analysis of neural spiking (in prep)
-				</section>
-				<section data-background-image="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/ccn2017/animatronic.jpg" data-background-size="contain">
-					<blockquote cite="https://www.quora.com/What-did-Richard-Feynman-mean-when-he-said-What-I-cannot-create-I-do-not-understand", style="background-color: rgba(150, 150, 150, 0.75)">
-					What I cannot create, I do not understand. &mdash; Richard Feynman
-					</blockquote>
-					<aside class="notes" data-markdown>
-						# A note on method
-						- this is what I mean by neuroengineering
-							- *reverse* engineering
-						- not sufficient, but necessary
-						- trying to build it means understanding constraints
-						- most interesting ideas in neuro theory about how *ANN*s learn
-
-						### photo credit:
-						[link](https://www.behance.net/gallery/26305123/ANIMATRONIC-AI-FOR-SPIELBERGS-EXTANT)
-					</aside>
-				</section>
-				<section data-markdown>
-					###A reverse engineering approach
-					- Work "outside-in"
-					- Focus on computational constraints
-					- "Structured black box" modeling
 				</section>
 				<section>
 					<h3>How do neurons see the world?</h3>
@@ -139,6 +154,7 @@
 				<section>
 					<h3>Let's run an experiment</h3>
 					<img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/nev/movie.svg" style="background: white">
+					<p class="ref">Chen, Beck, Pearson (under review)</p>
 				</section>
 				<section>
 					<h3>Let's imagine a model</h3>
@@ -175,10 +191,6 @@
 
 					<p>firing rate = baseline * latents * externals * noise</p>
 				</section>
-				<section>
-					<h3>And in diagram form</h3>
-					<img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/nev/model_formal.svg" style="background: white">
-				</section>
 				<section data-markdown>
 					###Model fitting
 					We have $p(N|Z, \Theta)$
@@ -205,25 +217,16 @@
 				</section>
 				<section>
 					<h3>Experiment I: Synthetic data</h3>
-					<img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/nev/synthetic.svg" style="background: white">
+					<img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/nev/synthetic_comparison.svg" style="background: white">
 				</section>
 				<section>
-					<h3>Experiment II: Parietal Cortex</h3>
-					<img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/nev/roitman.svg" style="background: white; width:80%">
-					<p class="ref">Roitman and Shadlen (<em>J. Neuro.</em>, 2002)</p>
-				</section>
-				<section>
-					<h3>Experiment III: Temporal Cortex</h3>
+					<h3>Experiment II: Temporal Cortex</h3>
 					<img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/nev/imgclust_web.svg" style="background: white; width:100%">
 					<p class="ref">McMahon et al. (<em>PNAS</em>, 2014)</p>
 					<p>Face, monkey, and body part cells!</p>
 				</section>
 				<section>
-					<h3>Experiment III: Temporal Cortex</h3>
-					<img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/nev/imgclust_neurons.svg" style="background: white; width:100%">
-				</section>
-				<section>
-					<h3>Experiment III: Temporal Cortex</h3>
+					<h3>Experiment II: Temporal Cortex</h3>
 					<img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/nev/imgclust_sub_web.svg" style="background: white; width:100%">
 					<p>Viewpoint selectivity!</p>
 				</section>
@@ -235,8 +238,8 @@
 					- Goal is to look for patterns that **suggest new experiments.**
 				</section>
 				<section>
-					<h3>Mind reading 101</h3>
-					<img src="http://www.wnd.com/files/2016/11/Trump-Romney-TW.jpg" >
+					<h3>Movement as strategy</h3>
+					<img src="https://68.media.tumblr.com/5b4b51d6a41b1bfa52c323836056ab8d/tumblr_inline_olwur4ZtWq1ubozr5_500.gif" style="width: 700px">
 				</section>
 				<section>
 					<div style="float:left; width:25%">
@@ -255,14 +258,6 @@
 						<img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/sfn2016/PlattMichael.jpg" >
 						<p>Michael Platt</p>
 					</div>
-				</section>
-				<section data-background-image="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/ccn2017/monkey_fruit_tower.jpg">
-					<aside class="notes" data-markdown>
-						### competition is everywhere
-						- need to figure out what others' goals are
-						- we infer goals from movement
-							- Stanislavsky
-					</aside>
 				</section>
 				<section data-background-image="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/sfn2016/chess.jpg">
 					<aside class="notes" data-markdown>
@@ -287,6 +282,7 @@
 					<video width="70%" align="center" controls autoplay loop src="https://web.duke.edu/mind/level2/faculty/pearson/assets/videos/penaltyshot/sess130_new.mp4" type="video/mp4">
 						Your browser does not support the video tag.
 					</video>
+					<p class="ref">Iqbal and Pearson (under review)</p>
 					<aside class="notes" data-markdown>
 					  - two monkeys, shooter and goalie (shooter recorded)
 					  - controlled by joysticks
@@ -547,7 +543,7 @@ vid.playbackRate = 1.;
 					</video>
 				</section>
 				<section>
-					<h3>Value function</h3>
+					<h3>Potential energy function</h3>
 					<video width="70%" align="center" controls autoplay loop src="https://web.duke.edu/mind/level2/faculty/pearson/assets/videos/penaltyshot/real_trial_value.mp4" type="video/mp4">
 						Your browser does not support the video tag.
 					</video>
@@ -663,7 +659,47 @@ vid.playbackRate = 1.;
 				<!-- extra slides -->
 
 				<section>
+					<h3>A social brain?</h3>
+					<img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/ccn2017/mars_tpj.png" style="width: 75%">
+					<p class="ref">Mars et al. (PNAS 2014)</p>
+				</section>
+				<section>
 					<img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/ccn2017/etho_turn.png" alt="">
+				</section>
+				<section data-background-image="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/ccn2017/animatronic.jpg" data-background-size="contain">
+					<blockquote cite="https://www.quora.com/What-did-Richard-Feynman-mean-when-he-said-What-I-cannot-create-I-do-not-understand", style="background-color: rgba(150, 150, 150, 0.75)">
+					What I cannot create, I do not understand. &mdash; Richard Feynman
+					</blockquote>
+					<aside class="notes" data-markdown>
+						# A note on method
+						- this is what I mean by neuroengineering
+							- *reverse* engineering
+						- not sufficient, but necessary
+						- trying to build it means understanding constraints
+						- most interesting ideas in neuro theory about how *ANN*s learn
+
+						### photo credit:
+						[link](https://www.behance.net/gallery/26305123/ANIMATRONIC-AI-FOR-SPIELBERGS-EXTANT)
+					</aside>
+				</section>
+				<section data-markdown>
+					###A reverse engineering approach
+					- Work "outside-in"
+					- Focus on computational constraints
+					- "Structured black box" modeling
+				</section>
+				<section>
+					<h3>And in diagram form</h3>
+					<img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/nev/model_formal.svg" style="background: white">
+				</section>
+				<section>
+					<h3>Experiment II: Parietal Cortex</h3>
+					<img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/nev/roitman.svg" style="background: white; width:80%">
+					<p class="ref">Roitman and Shadlen (<em>J. Neuro.</em>, 2002)</p>
+				</section>
+				<section>
+					<h3>Experiment III: Temporal Cortex</h3>
+					<img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/nev/imgclust_neurons.svg" style="background: white; width:100%">
 				</section>
 				<section>
 					<h3>Same behavior, different mechanisms</h3>
