@@ -9,6 +9,7 @@ p.ref {
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: auto auto auto;
     align-items: center;
+    justify-items: center;
 }
 
 .reveal section img.grid-item {
