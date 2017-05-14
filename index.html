@@ -108,6 +108,26 @@
 					- Where are the tuning curves?
 				</section>
 				<section data-background-image="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/ccn2017/deep_learning_cover.jpg" data-background-size="contain">
+					<div style="background-color: rgba(0, 0, 0, 0.75); padding: 10px" class="fragment fade-left">
+						<h2>Why machine learning?</h2>
+						<ul>
+							<li class="fragment fade-in">
+								Models that <em>actually fit</em>
+								<ul>
+									<li>is the model <em>really</em> a good model?</li>
+									<li>structured black box</li>
+								</ul>
+							</li>
+							<li class="fragment fade-in">
+								The ANN as model system
+								<ul>
+									<li>algorithm as homology</li>
+									<li>what details matter?</li>
+									<li>takes distributed, dynamic, asynchronous seriously</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</section>
 				<section data-markdown>
 					### Today's plan:
@@ -555,6 +575,67 @@ vid.playbackRate = 1.;
 					- Structured black-box models allow us to carve behavior into interpretable pieces.
 					- We inferred a value function capable of explaining behavior in terms of goals.
 				</section>
+				<section>
+					<h2>Modeling neural data</h2>
+					<img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/penaltyshot/john_talk/spike_trajectories.svg"
+					style="">
+				</section>
+				<section>
+					<h2>Let's view that strategically</h2>
+					<div class="wrapper" style="">
+						<img class="grid-img"
+						src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/penaltyshot/john_talk/spike_density_converging.svg"
+						style="grid-column:1/3">
+						<img class="grid-img"
+						src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/penaltyshot/john_talk/spike_density_diverging.svg"
+						style="grid-column:3/5">
+						<p style="grid-column:1/3; align-self: start">Opponents Converging</p>
+						<p style="grid-column:3/5; align-self: start">Opponents Diverging</p>
+					</div>
+				</section>
+				<section>
+					<h2>Outcomes matter</h2>
+					<p style="font-size: 0.5em">(Even more than they should)</p>
+					<div class="wrapper" style="">
+						<img class="grid-img"
+						src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/penaltyshot/post_trial_firing.svg"
+						style="grid-column:1/3">
+						<img class="grid-img"
+						src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/penaltyshot/post_trial_firing2.svg"
+						style="grid-column:3/5">
+					</div>
+					<table>
+						<tr>
+							<th></th>
+							<th>DMPFC</th>
+							<th>DLPFC</th>
+						</tr>
+						<tr>
+							<th>Modulated</th>
+							<td>58%</td>
+							<td>43%</td>
+						</tr>
+						<tr>
+							<th>Close &ne; Easy</th>
+							<td>20%</td>
+							<td>18%</td>
+						</tr>
+					</table>
+				</section>
+				<section>
+					<h2>What does this suggest?</h2>
+					<ul>
+						<li>Post-trial D(M|L)PFC reflects more than reward </li>
+						<li>This is a potential training signal for strategy adaptation</li>
+					</ul>
+					<br>
+					<br>
+					<h2>What we're asking now:</h2>
+					<ul>
+						<li>Is this strategic advantage reflected moment-to-moment?</li>
+						<li>Does it reflect opponent goals?</li>
+					</ul>
+				</section>
 				<section data-markdown>
 					# Future directions
 				</section>
@@ -575,7 +656,6 @@ vid.playbackRate = 1.;
 						style="grid-column:3/5">
 						<p class="ref" style="grid-column:3/5; align-self: start">McDonald, Iqbal, Huettel, and Pearson</p>
 					</div>
-						<br>
 				</section>
 				<section>
 					<h2>Pacman</h2>
@@ -742,6 +822,19 @@ vid.playbackRate = 1.;
 					</div>
 					<div style="float: right; width: 50%">
 						<img src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/penaltyshot/end_trial_end_predict.svg" alt="">
+					</div>
+				</section>
+				<section>
+					<h2>Previous state of the art</h2>
+					<div class="wrapper" >
+						<img class="grid-img"
+						src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/penaltyshot/john_talk/dlgm_generated.png"
+						style="grid-column:1/3">
+						<img class="grid-img"
+						src="https://web.duke.edu/mind/level2/faculty/pearson/assets/images/penaltyshot/john_talk/vrnn_generated.png"
+						style="grid-column:3/5">
+						<p class="ref" style="grid-column:1/3; align-self: start">Variational Autoencoder</p>
+						<p class="ref" style="grid-column:3/5; align-self: start">Variational Recurrent Neural Network</p>
 					</div>
 				</section>
 				<section>
